@@ -25,51 +25,52 @@
     </div>
 
     <header class="screen-header">
-        <h1 class="screen-header__title">Friends</h1>
+        <h1 class="screen-header__title">Find</h1>
         <div class="screen-header__icons">
             <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
-            <span><i class="fa-solid fa-music fa-lg"></i></span>
             <span><i class="fa-solid fa-gear fa-lg"></i></span>
+            <span class="screen-notification badge_dot"> </span>
         </div>
     </header>
 
-    <a id="friends-display-link">
-        <i class="fa-solid fa-circle-info"></i>
-        Friends' Names Display
-        <i class="fa-solid fa-chevron-right fa-xs"></i>
-    </a>
-
-    <main class="firends-screen">
-        <div class="user-component">
-            <div class="user-component__column">
-                <img src="https://d1telmomo28umc.cloudfront.net/media/public/avatars/aridari-avatar.jpg" class="user-component__avatar user-conponent__avatar--xl" />
-                <div class="user-component__text">
-                    <h4 class="user-component__title">Taehwan</h4>
-                    <!-- <h6 class="user-component__subtitle">This text whatever</h6> 다음에 사용-->
-                </div>
-            </div>
-            <div class="user-component__column"></div>
+    <main class="main-screen">
+        <div class="find-icons">
+            <div class="find-icons__icon">
+                <i class="fa-solid fa-qrcode"></i>
+                <span>Qr Code</span></div>
+            <div class="find-icons__icon">
+                <i class="fa-regular fa-address-book"></i>
+                <span>Add by Contacts</span></div>
+            <div class="find-icons__icon">
+                <i class="fa-solid fa-fingerprint"></i>
+                <span>Add by ID</span></div>
+            <div class="find-icons__icon">
+                <i class="fa-regular fa-envelope"></i>
+                <span>Invite</span></div>
         </div>
-        <div class="friends-screen__channel">
-            <div class="friends-screen__channel-header">
-                <span>Channel</span>
-                <i class="fa-solid fa-chevron-up fa-xs"></i>
+        <div class="recommended-friends">
+            <h6 class="recommended-friends__title">Recommended Friends</h6>
+            <span>You have no recommended friends.</span>
+        </div>
+        <div class="open-chat">
+            <div class="open-chat__header">
+                <h4>Open Chat</h4>
+                <span>Go to Openchat Home <i class="fa-solid fa-chevron-right fa-xs"></i></span>  
             </div>
-            <div class="user-component">
-                <div class="user-component__column">
-                    <img src="https://d1telmomo28umc.cloudfront.net/media/public/avatars/aridari-avatar.jpg" class="user-component__avatar user-conponent__avatar--sm" />
-                    <div class="user-component__text">
-                        <h4 class="user-component__title user-component__title--not-bold">Channel</h4>
-                        <!-- <h6 class="user-component__subtitle">This text whatever</h6> 다음에 사용-->
-                    </div>
-                </div>
-                <div class="user-component__column">
-                    <div>
-                        <span>2</span>
-                    <i class="fa-solid fa-chevron-right fa-xs"></i>
-                    </div>
+
+        </div>
+        <div class="open-post">
+            <div class="open-post__column">
+                <h5 class="open-post__title">#BTS</h5>
+                <h6 class="open-post__hashtags">#bts#army#friends</h6>
+                <div class="open-post__members">
+                    <img src="https://d1telmomo28umc.cloudfront.net/media/public/avatars/aridari-avatar.jpg" />
+                    <span class="open-post__members-count">802 members</span>
+                    <div class="divider"></div>
+                    <span class="open-post__members-status">Active</span>
                 </div>
             </div>
+            <div class="open-post__column"></div>
         </div>
     </main>
 
@@ -77,7 +78,7 @@
         <ul class="nav__list">
             <li class="nav__btn">
                 <a class="nav__link" href="friends.html">
-                <i class="fa-solid fa-user fa-2x"></i></a>
+                <i class="fa-regular fa-user fa-2x"></i></a>
             </li>
             <li class="nav__btn">
                 <a class="nav__link" href="chats.html">
